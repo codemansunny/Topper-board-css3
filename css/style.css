@@ -1,5 +1,92 @@
-/* Top Student*/
-.students{
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/*---------------- 
+Semmier Style
+---------------- */
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #F3F1FF;
+}
+
+main{
     display: flex;
+    justify-content: center;
+}
+
+.container{
+    background-color: white;
+    width: 870px;
+    padding: 30px;
+}
+
+/* Top Student*/
+.section-title{
+    color: #562EFF;
+    font-size: 24px;
+    margin-top: 3px;
+}
+
+.students{
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+}
+
+.student{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.student img{
+    width: 56px;
+    height: 56px;
+}
+
+.student-name{
+    margin-left: 16px;
+}
+
+hr{
+    border: 1px solid #D1D1D1;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/*--------------- 
+Top Blogs Style 
+----------------*/
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 26px;
+}
+.blog{
+    display: flex;
+}
+
+.blog img{
+    width: 177px;
+    height: 117px;
+}
+
+.blog-details{
+    margin-left: 16px;
+}
+
+.blog-title{
+    font-size: 20px;
+}
+
+.blog-author{
+    color: #9f9f9f;
+    font-size: 16px;
+    
+}
+
+.blog-author a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #562EFF;
 }
