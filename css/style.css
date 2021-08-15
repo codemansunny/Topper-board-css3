@@ -10,14 +10,16 @@ body{
 }
 
 main{
-    display: flex;
+    display: grid;
     justify-content: center;
+    clear: both;
 }
 
 .container{
     background-color: white;
     width: 870px;
     padding: 30px;
+    border-radius: 15px;
 }
 
 /* Top Student*/
@@ -89,4 +91,53 @@ Top Blogs Style
     text-decoration: none;
     font-size: 16px;
     color: #562EFF;
+}
+
+/*--------------- 
+cources Style
+----------------*/
+.course .course-banner img{
+    width: 224px;
+    height: 104px;
+}
+ /*------------
+  Font Awsome
+  ------------ */
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+}
+
+.course{
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgb(238, 228, 228);
+}
+
+.course-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px gray;
+}
+
+.fa-star{
+    font-size: 12px;
+}
+
+.fa-star.filled{
+    color: #FFC014;
+}
+
+.fa-star.empty{
+    color: #AEAEAE;
+}
+
+.course-duration{
+    background: rgb(69, 238, 159);
+    padding: 5px;
+    border-radius: 50px;
 }
